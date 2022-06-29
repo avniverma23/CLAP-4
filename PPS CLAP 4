@@ -1,0 +1,54 @@
+#include <stdio.h>
+int main()
+{
+    float Physics, Chemistry, Math,CS,English; 
+    float sum, avg,percentage;
+    /* Input marks of all five subjects */
+    printf("Enter marks of five subjects in the order English,Physics,Chemistry,Math,CS out of 100\n");
+     printf("Enter marks of  English out of 100\n");
+    scanf("%f",&English);
+    while(English<0||English>100)
+    {
+        printf("enter marks correctly in between 0 to 100\n");
+        scanf("%f",&English);
+    }
+    printf("Enter marks of  Physics out of 100\n");
+    scanf("%f",&Physics);
+    while(Physics<0||Physics>100)
+    {
+        printf("enter marks correctly in between 0 to 100\n");
+        scanf("%f",&Physics);
+    }
+    printf("Enter marks of  Chemistry out of 100\n");
+    scanf("%f",&Chemistry);
+    while(Chemistry<0||Chemistry>100)
+    {
+        printf("enter marks correctly in between 0 to 100\n");
+        scanf("%f",&Chemistry);
+    }
+    printf("Enter marks of  Maths out of 100\n");
+    scanf("%f",&Math);
+    while(Math<0||Math>100)
+    {
+        printf("enter marks correctly in between 0 to 100\n");
+        scanf("%f",&Math);
+    }
+    printf("Enter marks of  CS out of 100\n");
+    scanf("%f",&CS);
+    while(CS<0||CS>100)
+    {
+        printf("enter marks correctly in between 0 to 100\n");
+        scanf("%f",&CS);
+    }
+    //scanf("%f%f%f%f%f", &English, &Physics, &Chemistry, &Math, &CS);
+    
+    /* Calculate sum, average , percentage*/
+    sum = English +Physics +Chemistry+Math+CS;
+    avg = sum/ 5.0;
+    percentage = (sum/500)*100;
+    /* Print all results */
+    printf("Total marks = %.2f\n",sum);
+    printf("Average marks = %.2f\n",avg);
+    printf("the percentage is:%.2f",percentage);
+    return 0;
+}
